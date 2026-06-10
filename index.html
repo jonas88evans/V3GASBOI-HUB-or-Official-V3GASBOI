@@ -1,26 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Joke Generator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <div class="joke-box">
-            <h1>😂 Joke Generator</h1>
-            <div class="joke-display">
-                <p id="joke-text">Click the button to get a random joke!</p>
-            </div>
-            <button id="joke-button" class="btn">Get a Joke</button>
-            <button id="copy-button" class="btn btn-secondary">Copy Joke</button>
-            <div id="loading" class="loading" style="display: none;">
-                <span class="spinner"></span> Loading...
-            </div>
-            <div id="error-message" class="error" style="display: none;"></div>
-        </div>
-    </div>
-    <script src="script.js"></script>
-</body>
-</html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>V3GASBOI — Official Folio + AI Command Hub</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght=300;400;600;700&family=Barlow:wght=300;400;500&family=Share+Tech+Mono&family=Orbitron:wght=400;700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --red: #e8000a;
+    --gold: #d4a017;
+    --white: #f5f0e8;
+    --black: #080808;
+    --charcoal: #111111;
+    --dim: #1a1a1a;
+    --muted: #888;
+    --neon: #ff3c00;
+    --cyan: #00ffff;
+    --magenta: #ff00ff;
+    --purple: #b366ff;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--black);
+    color: var(--white);
+    font-family: 'Barlow', sans-serif;
+    font-weight: 300;
+    overflow-x: hidden;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.4;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; width: 100%; z-index: 200;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 18px 48px;
+    background: linear-gradient(to bottom, rgba(8,8,8,0.97), transparent);
+    backdrop-filter: blur(4px);
+  }
+    
